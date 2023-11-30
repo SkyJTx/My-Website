@@ -52,3 +52,25 @@ body {
 .nav-link:hover::before {
   width: 100%;
 }
+
+/*Logo*/
+
+@keyframes scaleIcon {
+  0% {
+      opacity: 0;
+      transform: scale(10);
+  }
+
+  25% {
+      opacity: 1;
+      transform: scale(0.9);
+  }
+
+  100% {
+      transform: scale(1);
+  }
+}
+
+.animate-logo {
+  animation: scaleIcon 1s;
+}

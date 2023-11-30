@@ -13,12 +13,12 @@ const Navbar = () => {
             </Link>
           </li>
           <li id="Work" className={navStyle}>
-            <Link href="/work">
+            <Link href="/">
               Work
             </Link>
           </li>
           <li id="About" className={navStyle}>
-            <Link href="/about">
+            <Link href="/">
               About
             </Link>
           </li>

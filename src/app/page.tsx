@@ -1,5 +1,7 @@
 import Navbar from './navbar'
 import Background from './background'
+import Article from './article'
+import Footer from './footer'
 
 export default function Home() {
   const hyperLinkStyle: string = "text-cyan-400 hover:text-yellow-500 transition ease-in-out duration-200"
@@ -8,15 +10,72 @@ export default function Home() {
     <main>
       <Background/>
       <Navbar/>
-      <div id="logo-container" className="mt-48 mb-48">
-        <img id="logo" src="./logo/logo.jpg" alt="SkyJT's Logo" className="mx-auto w-48 h-48 rounded-full overflow-hidden text-center"></img>
+      <div id="logo-container" className="mt-72 mb-72">
+        <img id="logo" src="./logo/logo.jpg" alt="SkyJT's Logo" className="mx-auto w-48 h-48 rounded-full overflow-hidden text-center animate-logo shadow-xl"></img>
       </div>
-      <h1 className="text-4xl font-bold text-center bottom-0">
+      <h1 className="text-5xl font-bold text-center bottom-0">
         Welcome to{' '}
         <a className={hyperLinkStyle} href="https://github.com/SkyJTx" target="_blank" rel="noopener noreferrer">
           SkyJT
         </a>
       </h1>
+      <Article title="Hello World!" date="2023/11/30 9:31 PM">
+        <p>My name is Nattakarn Khumsupha. I'm a computer engineering student at KMUTNB (King Mongkut's University of Technology North Bangkok). I'm currently interested in Programming, Technology, Classical Music, History, and many more.</p>
+        <hr></hr>
+        <p>Specialised and/or Experienced Programming Languages and Tools:</p>
+        <ul>
+          <li>
+            <a className={hyperLinkStyle} href="https://www.python.org/" target="_blank" rel="noopener noreferrer">
+              Python
+            </a>
+          </li>
+          <li>
+            <a className={hyperLinkStyle} href="https://www.arduino.cc/" target="_blank" rel="noopener noreferrer">
+              Arduino
+            </a>
+          </li>
+          <li>
+            <a className={hyperLinkStyle} href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">
+              Node.js
+            </a>
+          </li>
+          <li>
+            <a className={hyperLinkStyle} href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
+              Next.js
+            </a>
+          </li>
+        </ul>
+        <hr></hr>
+        <p>Other Programming Languages and Tools I'm willing to learn:</p>
+        <ul>
+          <li>
+            <a className={hyperLinkStyle} href="https://www.rust-lang.org/" target="_blank" rel="noopener noreferrer">
+              Rust
+            </a>
+          </li>
+          <li>
+            <a className={hyperLinkStyle} href="https://www.mysql.com/" target="_blank" rel="noopener noreferrer">
+              MySQL
+            </a>
+          </li>
+          <li>
+            <a className={hyperLinkStyle} href="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer">
+              PostgreSQL
+            </a>
+          </li>
+          <li>
+            <a className={hyperLinkStyle} href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer">
+              MongoDB
+            </a>
+          </li>
+          <li>
+            <a className={hyperLinkStyle} href="https://www.docker.com/" target="_blank" rel="noopener noreferrer">
+              Docker
+            </a>
+          </li>
+        </ul>
+      </Article>
+      <Footer version="1.0.0dev"/>
     </main>
   )
 }
