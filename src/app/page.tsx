@@ -11,7 +11,7 @@ export default function Home() {
     <main>
       <Background/>
       <Navbar/>
-      <div id="logo-container" className="mt-72 mb-72">
+      <div id="logo-container" className="mt-80 mb-80">
         <img id="logo" src="./logo/logo.jpg" alt="SkyJT's Logo" className="mx-auto w-48 h-48 rounded-full overflow-hidden text-center animate-logo shadow-xl"></img>
       </div>
       <h1 className="text-5xl font-bold text-center bottom-0">
@@ -77,7 +77,7 @@ export default function Home() {
         </ul>
       </Article>
       <Connect/>
-      <Footer version="1.0.0dev"/>
+      <Footer/>
     </main>
   )
 }

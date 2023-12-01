@@ -1,4 +1,4 @@
-const Footer = ({version}: any) => {
+const Footer = () => {
     const hyperLinkStyle: string = "text-cyan-400 hover:text-yellow-400 transition ease-in-out duration-200"
 
     return (
@@ -11,7 +11,7 @@ const Footer = ({version}: any) => {
                 }.
             </p>
             <p className="text-center text-l">
-                SkyJT's Website v{version} | Nattakarn Khumsupha. Whatever License.
+                SkyJT's Website v1.0.0dev | Nattakarn Khumsupha. Whatever License.
             </p>
         </footer>
     )

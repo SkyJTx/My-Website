@@ -1,5 +1,5 @@
 const Connect = () => {
-    const liStyle: string = "my-2 mx-1 w-32 h-32 border-solid border-2 border-white rounded-md inline-flex items-center hover:scale-110 transition-transform ease-in-out"
+    const liStyle: string = "my-2 mx-1 w-32 h-32 border-solid border-2 border-white rounded-md inline-flex items-center hover:scale-110 hover:bg-slate-700 transition-transform ease-in-out"
     const aStyle: string = "p-10 w-32 max-h-32 flex flex-col justify-center items-center border-none rounded-md"
     const imgStyle: string = "m-5 w-32 max-h-32 rounded-full"
     const pStyle: string = "m-0 text-sm text-bold text-white"

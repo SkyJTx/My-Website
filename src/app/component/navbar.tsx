@@ -13,7 +13,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li id="Work" className={navStyle}>
-            <Link href="/">
+            <Link href="/work">
               Work
             </Link>
           </li>
