@@ -3,12 +3,13 @@ import React, { ReactElement, ReactNode } from 'react'
 interface ArticleProps {
     title: string,
     date: string,
+    modify: boolean,
     children: ReactNode
 }
 
-const Article = ({title, date, children}: ArticleProps) => {
+const Article = ({title, date, modify = true, children}: ArticleProps) => {
     const modifyChildren = (child: ReactNode) => {
-        if (React.isValidElement(child)) {
+        if (React.isValidElement(child) && modify) {
             if (child.type === 'p') {
                 return React.cloneElement(child as ReactElement, {className: 'text-lg'})
             } else if (child.type === 'ul') {
@@ -26,7 +27,7 @@ const Article = ({title, date, children}: ArticleProps) => {
 
     return (
         <article className="m-10 p-4 py-8 bg-slate-800 rounded-xl shadow-2xl">
-            <h2 className="text-center font-bold text-3xl bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text">
+            <h2 className="m-auto p-0 text-center font-bold text-3xl bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text">
                 {title}
             </h2>
             <div className="m-5">

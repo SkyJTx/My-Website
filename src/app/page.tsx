@@ -1,10 +1,11 @@
-import Navbar from './navbar'
-import Background from './background'
-import Article from './article'
-import Footer from './footer'
+import Navbar from './component/navbar'
+import Background from './component/background'
+import Article from './component/article'
+import Footer from './component/footer'
+import Connect from './component/connect'
 
 export default function Home() {
-  const hyperLinkStyle: string = "text-cyan-400 hover:text-yellow-500 transition ease-in-out duration-200"
+  const hyperLinkStyle: string = "text-cyan-400 hover:text-yellow-400 transition ease-in-out duration-200"
 
   return (
     <main>
@@ -19,10 +20,10 @@ export default function Home() {
           SkyJT
         </a>
       </h1>
-      <Article title="Hello World!" date="2023/11/30 9:31 PM">
+      <Article title="Hello World!" date="2023/11/30 9:31 PM" modify={true}>
         <p>My name is Nattakarn Khumsupha. I'm a computer engineering student at KMUTNB (King Mongkut's University of Technology North Bangkok). I'm currently interested in Programming, Technology, Classical Music, History, and many more.</p>
         <hr></hr>
-        <p>Specialised and/or Experienced Programming Languages and Tools:</p>
+        <p>Experienced Programming Languages and Tools:</p>
         <ul>
           <li>
             <a className={hyperLinkStyle} href="https://www.python.org/" target="_blank" rel="noopener noreferrer">
@@ -75,6 +76,7 @@ export default function Home() {
           </li>
         </ul>
       </Article>
+      <Connect/>
       <Footer version="1.0.0dev"/>
     </main>
   )

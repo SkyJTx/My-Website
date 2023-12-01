@@ -5,7 +5,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="fixed top-0 z-50 w-screen bg-gradient-to-b from-slate-800 to-transparent">
+      <nav className="fixed top-0 z-50 w-screen bg-gradient-to-b from-slate-800 to-transparent hover:backdrop-blur-sm transition ease-in-out duration-200">
         <ul>
           <li id="Home" className={navStyle}>
             <Link href="/">
