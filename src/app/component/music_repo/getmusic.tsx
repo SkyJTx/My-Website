@@ -7,7 +7,7 @@ const jsdom = require("jsdom")
 const { JSDOM } = jsdom
 
 export async function getData(): Promise<MusicListProps>  {
-    const response = await fetch('https://musescore.com/user/28571731/sheetmusic');
+    const response = await fetch('https://musescore.com/user/28571731/sheetmusic', { next: { revalidate: 60 } });
     if (!response.ok) {
         throw new Error(response.statusText);
     }

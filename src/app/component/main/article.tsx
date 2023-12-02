@@ -10,17 +10,29 @@ interface ArticleProps {
 const Article = ({title, date, modify = true, children}: ArticleProps) => {
     const modifyChildren = (child: ReactNode) => {
         if (React.isValidElement(child) && modify) {
-            if (child.type === 'p') {
-                return React.cloneElement(child as ReactElement, {className: 'text-lg'})
-            } else if (child.type === 'ul') {
-                return React.cloneElement(child as ReactElement, {className: 'list-disc list-inside'})
-            } else if (child.type === 'li') {
-                return React.cloneElement(child as ReactElement, {className: 'text-lg'})
-            } else if (child.type === 'hr') {
-                return React.cloneElement(child as ReactElement, {className: 'm-3 border-slate-400 border-2 rounded'})
+            let newClassName = ''
+            let existingClassName = ''
+
+            if (child.props.className) {
+                existingClassName = child.props.className + ' '
             }
+
+            if (child.type === 'p') {
+                newClassName = 'text-lg'
+            } else if (child.type === 'ul') {
+                 newClassName = 'list-disc list-inside'
+            } else if (child.type === 'li') {
+                newClassName = 'text-lg'
+            } else if (child.type === 'hr') {
+                newClassName = 'm-3 border-slate-400 border-2 rounded'
+            }
+      
+            const mergedClassName = existingClassName + newClassName
+      
+            return React.cloneElement(child as ReactElement, {className: mergedClassName.trim()})
         }
-        return child
+      
+        return child;
     }
 
     const modifiedChildren = React.Children.map(children, modifyChildren)

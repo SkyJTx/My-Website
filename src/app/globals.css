@@ -74,3 +74,15 @@ body {
 .animate-logo {
   animation: scaleIcon 1s;
 }
+
+/*Hyperlink*/
+
+.hyperlink {
+  color: rgb(34 211 238);
+  transition: ease-in-out 0.2s;
+  text-decoration: none;
+}
+
+.hyperlink:hover {
+  color: rgb(250 204 21);
+}

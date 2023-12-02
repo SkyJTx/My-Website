@@ -1,11 +1,10 @@
-import Navbar from './component/navbar'
-import Background from './component/background'
-import Article from './component/article'
-import Footer from './component/footer'
-import Connect from './component/connect'
+import Navbar from './component/main/navbar'
+import Background from './component/main/background'
+import Article from './component/main/article'
+import Footer from './component/main/footer'
+import Connect from './component/main/connect'
 
 export default function Home() {
-  const hyperLinkStyle: string = "text-cyan-400 hover:text-yellow-400 transition ease-in-out duration-200"
 
   return (
     <main>
@@ -16,7 +15,7 @@ export default function Home() {
       </div>
       <h1 className="text-5xl font-bold text-center bottom-0">
         Welcome to{' '}
-        <a className={hyperLinkStyle} href="https://github.com/SkyJTx" target="_blank" rel="noopener noreferrer">
+        <a className="hyperlink" href="https://github.com/SkyJTx" target="_blank" rel="noopener noreferrer">
           SkyJT
         </a>
       </h1>
@@ -26,22 +25,22 @@ export default function Home() {
         <p>Experienced Programming Languages and Tools:</p>
         <ul>
           <li>
-            <a className={hyperLinkStyle} href="https://www.python.org/" target="_blank" rel="noopener noreferrer">
+            <a className="hyperlink" href="https://www.python.org/" target="_blank" rel="noopener noreferrer">
               Python
             </a>
           </li>
           <li>
-            <a className={hyperLinkStyle} href="https://www.arduino.cc/" target="_blank" rel="noopener noreferrer">
+            <a className="hyperlink" href="https://www.arduino.cc/" target="_blank" rel="noopener noreferrer">
               Arduino
             </a>
           </li>
           <li>
-            <a className={hyperLinkStyle} href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">
+            <a className="hyperlink" href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">
               Node.js
             </a>
           </li>
           <li>
-            <a className={hyperLinkStyle} href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
+            <a className="hyperlink" href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
               Next.js
             </a>
           </li>
@@ -50,27 +49,27 @@ export default function Home() {
         <p>Other Programming Languages and Tools I'm willing to learn:</p>
         <ul>
           <li>
-            <a className={hyperLinkStyle} href="https://www.rust-lang.org/" target="_blank" rel="noopener noreferrer">
+            <a className="hyperlink" href="https://www.rust-lang.org/" target="_blank" rel="noopener noreferrer">
               Rust
             </a>
           </li>
           <li>
-            <a className={hyperLinkStyle} href="https://www.mysql.com/" target="_blank" rel="noopener noreferrer">
+            <a className="hyperlink" href="https://www.mysql.com/" target="_blank" rel="noopener noreferrer">
               MySQL
             </a>
           </li>
           <li>
-            <a className={hyperLinkStyle} href="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer">
+            <a className="hyperlink" href="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer">
               PostgreSQL
             </a>
           </li>
           <li>
-            <a className={hyperLinkStyle} href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer">
+            <a className="hyperlink" href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer">
               MongoDB
             </a>
           </li>
           <li>
-            <a className={hyperLinkStyle} href="https://www.docker.com/" target="_blank" rel="noopener noreferrer">
+            <a className="hyperlink" href="https://www.docker.com/" target="_blank" rel="noopener noreferrer">
               Docker
             </a>
           </li>
