@@ -36,6 +36,8 @@ async function getMarkdown(url: string) {
             element.setAttribute("class", "m-3 border-slate-400 border-2 rounded")
         } else if (element.tagName === "A") {
             element.setAttribute("class", "hyperlink")
+            element.setAttribute("target", "_blank")
+            element.setAttribute("rel", "noopener noreferrer")
         } else if (element.tagName === "IMG") {
             element.setAttribute("class", "m-5")
         } else {
