@@ -15,7 +15,7 @@ const MD = ({url}: any) => {
     }, [])
 
     return (
-        <div className="p-10 overflow-auto" id="markdown">
+        <div className="overflow-auto" id="markdown">
             {markdown !== undefined ? (
                 <div dangerouslySetInnerHTML={{__html: markdown}}></div>) : (
                 <div className="text-3xl text-center text-white">Loading...</div>
