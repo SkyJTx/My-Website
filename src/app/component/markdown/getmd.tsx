@@ -47,8 +47,6 @@ async function getMarkdown(url: string) {
 
     const result = dom.serialize()
 
-    console.log(result)
-
     return (
         <ReactMarkdown>
             {result}

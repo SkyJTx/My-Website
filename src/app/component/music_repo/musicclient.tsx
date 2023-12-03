@@ -36,7 +36,7 @@ export function MusicClient({data}: any) {
                     </div>
                 ))
             ) : (
-                <p>Loading...</p>
+                <p className="text-3xl text-center">Loading...</p>
             )}
         </div>
     )

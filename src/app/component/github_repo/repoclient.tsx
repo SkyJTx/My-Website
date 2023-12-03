@@ -11,7 +11,7 @@ const RepoClient = ({data}: RepoListProps) => {
                     <p id="description" key="description" className="text-lg">{"Description: " + repo.description}</p>
                     <p id="language" key="language" className="text-lg">{"Main Language: " + repo.language}</p>
                 </div>
-            ))) : (<p>Loading...</p>)}
+            ))) : (<p className="text-3xl text-center">Loading...</p>)}
         </div>
     )
 }
