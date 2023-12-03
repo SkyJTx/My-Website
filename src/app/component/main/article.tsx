@@ -45,7 +45,7 @@ const Article = ({title, date, modify = true, children}: ArticleProps) => {
             <div className="m-5">
                 {modifiedChildren}
             </div>
-            <p className="text-right text-sm">
+            <p className="text-right text-sm text-white">
                 {date}
             </p>
         </article>
