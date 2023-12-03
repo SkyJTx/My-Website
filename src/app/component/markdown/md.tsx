@@ -18,7 +18,7 @@ const MD = ({url}: any) => {
         <div className="p-10 overflow-auto" id="markdown">
             {markdown !== undefined ? (
                 <div dangerouslySetInnerHTML={{__html: markdown}}></div>) : (
-                <div className="text-3xl text-center">Loading...</div>
+                <div className="text-3xl text-center text-white">Loading...</div>
             )}
         </div>
     )
