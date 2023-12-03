@@ -1,5 +1,3 @@
-"use server"
-
 import ReactMarkdown from "react-markdown"
 
 const jsdom = require("jsdom")
