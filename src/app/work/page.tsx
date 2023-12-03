@@ -56,9 +56,6 @@ const Work = () => {
             <Background/>
             <Navbar/>
             <div className="w-10 h-10"></div>
-            <Article title="Work in Progress" date="Date of Issue: 2023/12/1 9:17 PM" modify={true}>
-                Repositories Selector, Music Repositories, and GitHub Repositories are still in progress. Please wait for a while.
-            </Article>
             <SelectionMenu options={repoOptions} onSelect={handleSelect}/>
             {selectedRepo(selectedValue)}
             <Connect/>
