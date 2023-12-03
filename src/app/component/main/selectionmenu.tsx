@@ -15,7 +15,7 @@ const SelectionMenu = ({options, onSelect}: SelectionMenuProps) => {
 
     return (
         <div className="m-10 p-4 py-8 bg-slate-800 rounded-xl shadow-2xl">
-            <h2 className="m-auto p-0 text-center font-bold text-3xl text-white bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text">
+            <h2 className="m-auto p-0 text-center font-bold text-3xl bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text">
                 Select a Project Type
             </h2>
             <div className="m-5">
