@@ -55,7 +55,7 @@ const Work = () => {
         <main>
             <Background/>
             <Navbar/>
-            <div className="w-10 h-10"></div>
+            <div className="w-screen h-32"></div>
             <SelectionMenu options={repoOptions} onSelect={handleSelect}/>
             {selectedRepo(selectedValue)}
             <Connect/>

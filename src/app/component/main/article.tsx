@@ -18,11 +18,11 @@ const Article = ({title, date, modify = true, children}: ArticleProps) => {
             }
 
             if (child.type === 'p') {
-                newClassName = 'text-lg'
+                newClassName = 'text-lg text-white'
             } else if (child.type === 'ul') {
                  newClassName = 'list-disc list-inside'
             } else if (child.type === 'li') {
-                newClassName = 'text-lg'
+                newClassName = 'text-lg text-white'
             } else if (child.type === 'hr') {
                 newClassName = 'm-3 border-slate-400 border-2 rounded'
             }

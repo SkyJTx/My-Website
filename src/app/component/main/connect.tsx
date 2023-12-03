@@ -1,8 +1,8 @@
 const Connect = () => {
-    const liStyle: string = "my-2 mx-1 w-32 h-32 border-solid border-2 border-white rounded-md inline-flex items-center hover:scale-110 hover:bg-slate-700 transition-transform ease-in-out"
-    const aStyle: string = "p-10 w-32 max-h-32 flex flex-col justify-center items-center border-none rounded-md"
-    const imgStyle: string = "m-5 w-32 max-h-32 rounded-full"
-    const pStyle: string = "m-0 text-sm text-bold text-white"
+    const liStyle: string = "my-2 mx-1 border-solid border-2 border-white rounded-md inline-flex justify-center items-center hover:scale-110 hover:bg-slate-700 transition-transform ease-in-out"
+    const aStyle: string = "p-8 w-32 max-h-32 flex flex-col justify-center items-center"
+    const imgStyle: string = "m-0 p-2 max-w-32 h-auto border-none"
+    const pStyle: string = "m-0 p-0 text-sm text-bold text-white text-center"
 
     return (
         <article className="m-10 p-4 py-8 bg-slate-800 rounded-xl shadow-2xl">
@@ -52,5 +52,8 @@ const Connect = () => {
         </article>
     )
 }
+
+// contribution
+// <a href="https://iconscout.com/icons/leetcode" class="text-underline font-size-sm" target="_blank">Leetcode</a> by <a href="https://iconscout.com/contributors/icon-54" class="text-underline font-size-sm">Icon 54</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a>
 
 export default Connect

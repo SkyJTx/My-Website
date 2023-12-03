@@ -27,11 +27,11 @@ async function getMarkdown(url: string) {
         } else if (element.tagName === "H6") {
             element.setAttribute("class", "text-xs text-bold text-center my-3 text-yellow-500")
         } else if (element.tagName === "P") {
-            element.setAttribute("class", "text-md")
+            element.setAttribute("class", "text-md text-white")
         } else if (element.tagName === "UL") {
             element.setAttribute("class", "list-disc list-inside")
         } else if (element.tagName === "LI") {
-            element.setAttribute("class", "text-md")
+            element.setAttribute("class", "text-md text-white")
         } else if (element.tagName === "HR") {
             element.setAttribute("class", "m-3 border-slate-400 border-2 rounded")
         } else if (element.tagName === "A") {

@@ -14,7 +14,7 @@ export default function Home() {
       <div id="logo-container" className="mt-80 mb-80">
         <img id="logo" src="./logo/logo.jpg" alt="SkyJT's Logo" className="mx-auto w-48 h-48 rounded-full overflow-hidden text-center animate-logo shadow-xl"></img>
       </div>
-      <h1 className="text-5xl font-bold text-center bottom-0">
+      <h1 className="text-5xl font-bold text-center bottom-0 text-white">
         Welcome to{' '}
         <a className="hyperlink" href="https://github.com/SkyJTx" target="_blank" rel="noopener noreferrer">
           SkyJT

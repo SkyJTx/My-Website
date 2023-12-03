@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 const Navbar = () => {
-  const navStyle: string = "nav-link inline-block m-2 p-3 border-transparent hover:text-yellow-400 transition ease-in-out duration-1000"
+  const navStyle: string = "nav-link inline-block m-2 p-3 border-transparent text-white hover:text-yellow-400 transition ease-in-out duration-1000"
 
   return (
     <div>

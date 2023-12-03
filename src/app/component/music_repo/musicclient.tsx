@@ -30,8 +30,8 @@ export function MusicClient({data}: any) {
                             <a className="hyperlink text-xl" href={score.href} target="_blank" rel="noopener noreferrer">
                                 <h3 id="title" key="title">{(index+1) + ". " + score.title}</h3>
                             </a>
-                            <p className="text-lg" id="composer" key="description">{"Composer: "+ score.composer}</p>
-                            <p className="text-lg" id="date" key="date">{"Date of Creation: "+ unixToDateString(Number(score.date))}</p>
+                            <p className="text-lg text-white" id="composer" key="description">{"Composer: "+ score.composer}</p>
+                            <p className="text-lg text-white" id="date" key="date">{"Date of Creation: "+ unixToDateString(Number(score.date))}</p>
                         </div>
                     </div>
                 ))
