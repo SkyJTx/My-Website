@@ -71,8 +71,32 @@ body {
   }
 }
 
+@keyframes inverseSpin {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes Spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .animate-logo {
   animation: scaleIcon 1s;
+}
+
+.animate-nonlinear-spin {
+  animation: Spin 1s ease-in-out infinite;
+}
+
+.animate-inverse-spin {
+  animation: inverseSpin 1s linear infinite;
+}
+
+.animate-inverse-nonlinear-spin {
+  animation: inverseSpin 1s ease-in-out infinite;
 }
 
 /*Hyperlink*/
