@@ -10,7 +10,7 @@ const Footer = () => {
                 }.
             </p>
             <p className="text-center text-lg text-white">
-                SkyJT's Website v1.1.0 | Nattakarn Khumsupha. LaTeX Project Public License v1.3c.
+                SkyJT's Website v1.2.0 | Nattakarn Khumsupha. LaTeX Project Public License v1.3c.
             </p>
         </footer>
     )
