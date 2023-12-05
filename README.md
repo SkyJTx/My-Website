@@ -1,8 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My-Website (Next Website)
+
+This is my website using [Next.js](https://nextjs.org/) framework.
+
+Using TypeScript syntax with Tailwind and ESLint.
+
+**License: [LaTeX Project Public License Version 1.3c](https://www.latex-project.org/lppl/lppl-1-3c/)**
+
+**Contributor: [SkyJTx](https://github.com/SkyJTx)**
 
 ## Getting Started
 
-First, run the development server:
+Recommended to install [Next.js](https://nextjs.org/docs/getting-started/installation) before proceeding.
+
+```bash
+npm install next@latest react@latest react-dom@latest
+```
+
+First, Install one of these:
+- [npm](https://nodejs.org/en) (From Node.js)
+- [yarn](https://yarnpkg.com/)
+- [pnpm](https://pnpm.io/)
+- [bun](https://bun.sh/)
+
+Seconds, run the development server:
 
 ```bash
 npm run dev
@@ -15,8 +35,6 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
