@@ -1,5 +1,6 @@
 "use client"
 
+import { Loading } from "../main/elements"
 import { Score } from "./score_interface"
 
 function unixToDateString(unix: number): string {
@@ -35,7 +36,7 @@ export function MusicClient({data}: any) {
                     </div>
                 ))
             ) : (
-                <p className="text-3xl text-center text-white">Loading...</p>
+                <Loading/>
             )}
         </div>
     )

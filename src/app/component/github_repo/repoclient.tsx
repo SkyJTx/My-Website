@@ -1,3 +1,4 @@
+import { Loading } from "../main/elements"
 import { RepoListProps } from "./interface"
 
 const RepoClient = ({data}: RepoListProps) => {
@@ -11,7 +12,7 @@ const RepoClient = ({data}: RepoListProps) => {
                     <p id="description" key="description" className="text-lg text-white">{"Description: " + repo.description}</p>
                     <p id="language" key="language" className="text-lg text-white">{"Main Language: " + repo.language}</p>
                 </div>
-            ))) : (<p className="text-3xl text-center text-white">Loading...</p>)}
+            ))) : (<Loading/>)}
         </div>
     )
 }

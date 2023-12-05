@@ -1,7 +1,9 @@
 "use client"
 
+import { Loading } from "../main/elements"
 import getMarkdown from "./getmd"
 import { useEffect, useState } from "react"
+
 
 const MD = ({url}: any) => {
     const [markdown, setMarkdown] = useState(undefined)
@@ -18,7 +20,7 @@ const MD = ({url}: any) => {
         <div className="overflow-auto" id="markdown">
             {markdown !== undefined ? (
                 <div dangerouslySetInnerHTML={{__html: markdown}}></div>) : (
-                <div className="text-3xl text-center text-white">Loading...</div>
+                <Loading/>
             )}
         </div>
     )

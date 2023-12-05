@@ -1,7 +1,7 @@
 import { time } from "console"
 import Article from "./main/article"
 import Body from "./main/body"
-import Loading from "./main/loading"
+import { Loading } from "./main/elements"
 
 export default function ComponentTesting() {
     return (
