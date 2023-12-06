@@ -1,16 +1,10 @@
-import Head from 'next/head'
-import Navbar from './component/main/navbar'
-import Background from './component/main/background'
 import Article from './component/main/article'
-import Footer from './component/main/footer'
-import Connect from './component/main/connect'
+import Body from './component/main/body'
 
 export default function Home() {
 
   return (
-    <main>
-      <Background/>
-      <Navbar/>
+    <Body>
       <div id="logo-container" className="mt-80 mb-80">
         <img id="logo" src="./logo/logo.jpg" alt="SkyJT's Logo" className="mx-auto w-48 h-48 rounded-full overflow-hidden text-center animate-logo shadow-xl"></img>
       </div>
@@ -76,8 +70,6 @@ export default function Home() {
           </li>
         </ul>
       </Article>
-      <Connect/>
-      <Footer/>
-    </main>
+    </Body>
   )
 }

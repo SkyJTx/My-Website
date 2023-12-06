@@ -1,14 +1,11 @@
 "use client"
 
 import Article from "../component/main/article"
-import Background from "../component/main/background"
-import Connect from "../component/main/connect"
-import Footer from "../component/main/footer"
-import Navbar from "../component/main/navbar"
 import MusicRepo from "../component/music_repo/music"
 import GitHubRepo from "../component/github_repo/repo"
 import SelectionMenu from "../component/main/selectionmenu"
 import { useState } from 'react'
+import Body from "../component/main/body"
 
 const repoOptions = ["Music Repositories", "GitHub Repositories"]
 
@@ -52,15 +49,11 @@ const Work = () => {
     }
 
     return (
-        <main>
-            <Background/>
-            <Navbar/>
+        <Body>
             <div className="w-screen h-32"></div>
             <SelectionMenu options={repoOptions} onSelect={handleSelect}/>
             {selectedRepo(selectedValue)}
-            <Connect/>
-            <Footer/>
-        </main>
+        </Body>
     )
 }
 
