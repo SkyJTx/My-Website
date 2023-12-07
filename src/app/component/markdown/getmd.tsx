@@ -41,7 +41,7 @@ async function getMarkdown(url: string) {
         } else if (element.tagName === "IMG") {
             element.setAttribute("class", "m-5")
         } else {
-            element.setAttribute("class", "")
+            element.setAttribute("class", element.getAttribute("class"))
         }
     }
 
