@@ -13,7 +13,7 @@ export default function ComponentTesting() {
                     Welcome to the testing corridor. This is where I test out new components and features for my website. This page is not meant to be seen by the public, but if you are here, then you are welcome to look around.
                 </p>
                 <Loading/>
-                <PageNavBar length={5} pageSetter={(page) => {console.log(page)}}/>
+                <PageNavBar length={10000} pageSetter={(page) => {console.log(page)}}/>
             </Article>
         </Body>
     )

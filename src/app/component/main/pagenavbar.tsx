@@ -6,8 +6,8 @@ interface pageNavBarProps {
 }
 
 export default function PageNavBar({length, pageSetter}: pageNavBarProps) {
-    const liStyle = "mx-1 inline-flex justify-center items-center border-solid border-2 border-white rounded-md hover:scale-110 hover:bg-slate-700 transition-transform ease-in-out"
-    const selectedLiStyle = "mx-1 inline-flex justify-center items-center border-solid border-2 border-white rounded-md scale-110 transition-transform ease-in-out"
+    const liStyle = "m-1 inline-flex justify-center items-center border-solid border-2 border-white rounded-md hover:scale-110 hover:bg-slate-700 transition-transform ease-in-out"
+    const selectedLiStyle = "m-1 inline-flex justify-center items-center border-solid border-2 border-white rounded-md scale-110 transition-transform ease-in-out"
     const buttonStyle = "p-3 rounded-md text-white text-sm font-bold"
     const selectedButtonStyle = "p-3 rounded-md bg-white text-black text-sm font-bold scale-110"
 
