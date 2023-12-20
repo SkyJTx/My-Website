@@ -17,7 +17,7 @@ const GitHubRepo = () => {
     }, [])
 
     return (
-        <div>
+        <div className="block">
             <RepoClient data={data}/>
         </div>
     )

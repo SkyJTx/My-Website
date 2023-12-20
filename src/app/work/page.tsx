@@ -15,7 +15,7 @@ function selectedRepo(selected: string) {
             return (
                 <Article title="MuseScore Repositories" date="" modify={true}>
                     <p className="text-center">
-                        These are top 20 of my MuseScore repositories. You can see all of my repositories at {
+                        These are all of my MuseScore repositories. You can see all of my repositories at {
                            <a className="hyperlink" href="https://musescore.com/skyjtx?share=copy_link" target="_blank" rel="noopener noreferrer">
                                 MuseScore
                            </a>
@@ -50,7 +50,6 @@ const Work = () => {
 
     return (
         <Body>
-            <div className="w-screen h-32"></div>
             <SelectionMenu options={repoOptions} onSelect={handleSelect}/>
             {selectedRepo(selectedValue)}
         </Body>

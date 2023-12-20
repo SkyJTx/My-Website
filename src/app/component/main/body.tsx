@@ -8,7 +8,7 @@ export default function Body({children}: any) {
         <main>
             <Background/>
             <Navbar/>
-            <div className="w-screen h-24"/>
+            <div className="w-10 h-10"/>
             {children}
             <Connect/>
             <Footer/>
