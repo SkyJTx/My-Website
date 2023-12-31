@@ -28,8 +28,8 @@ const MusicRepo = () => {
 
     return (
         <div>
-            <MusicClient data={data}/>
-            <PageNavBar length={Math.floor(length/20)+1} pageSetter={handleSelect}/>
+            <MusicClient data={data} start={(page-1)*20}/>
+            <PageNavBar length={Math.floor((length-1)/20)+1} pageSetter={handleSelect}/>
         </div>
     )
 }

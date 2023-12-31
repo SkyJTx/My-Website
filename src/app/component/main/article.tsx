@@ -1,10 +1,10 @@
 import React, { ReactElement, ReactNode } from 'react'
 
 interface ArticleProps {
-    title: string,
-    date: string,
-    modify: boolean,
-    children: ReactNode
+    title?: string,
+    date?: string,
+    modify?: boolean,
+    children?: ReactNode
 }
 
 const Article = ({title, date, modify = true, children}: ArticleProps) => {

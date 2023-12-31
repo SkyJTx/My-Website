@@ -7,6 +7,9 @@ const { JSDOM } = jsdom
 
 async function getMarkdown(url: string) {
     const res = await fetch(url, { next: { revalidate: 60 } })
+    if (!res.ok) {
+        throw new Error("Failed to fetch code")
+    }
     const data = await res.text()
     const stringHTML = <ReactMarkdown>{data}</ReactMarkdown>
     let dom = new JSDOM(stringHTML.props.children)

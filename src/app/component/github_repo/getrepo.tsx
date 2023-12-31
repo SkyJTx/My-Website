@@ -1,7 +1,10 @@
 "use server"
 
-export async function getRepoData(): Promise<any> {
-    const res = await fetch("https://api.github.com/users/SkyJTx/repos", { next: { revalidate: 60 } })
+export async function getRepoData(url: string): Promise<{name: string, description: string, language: string, url: string}[]> {
+    const res = await fetch(url, { next: { revalidate: 60 } })
+    if (!res.ok) {
+        throw new Error("Failed to fetch code")
+    }
     const data = await res.json()
     let retrivedData = []
     for (let i = 0; i < data.length; i++) {

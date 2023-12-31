@@ -24,14 +24,12 @@ export default function PageNavBar({length, pageSetter}: pageNavBarProps) {
     }
 
     return (
-        <div>
-            <ul className="m-0 p-0 text-center">
-                {pages.map((page) => (
-                    <li key={page} className={selectedPage === page ? (selectedLiStyle) : (liStyle)}>
-                        <button className={selectedPage === page ? (selectedButtonStyle) : (buttonStyle)} onClick={() => handleSelect(page)}>{page}</button>
-                    </li>
-                ))}
-            </ul>
-        </div>
+        <ul className="m-0 p-0 text-center">
+            {pages.map((page) => (
+                <li key={page} className={selectedPage === page ? (selectedLiStyle) : (liStyle)}>
+                    <button type="button" className={selectedPage === page ? (selectedButtonStyle) : (buttonStyle)} onClick={() => handleSelect(page)}>{page}</button>
+                </li>
+            ))}
+        </ul>
     )
 }

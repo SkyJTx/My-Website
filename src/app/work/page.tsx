@@ -32,7 +32,7 @@ function selectedRepo(selected: string) {
                             GitHub
                         </a>
                     }.</p>
-                    <GitHubRepo/>
+                    <GitHubRepo user="SkyJTx"/>
                 </Article>
             )
         default:

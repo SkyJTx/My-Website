@@ -14,7 +14,7 @@ function unixToDateString(unix: number): string {
     return `${year}/${month}/${day} ${hour}:${min}:${sec}`
 }
 
-export function MusicClient({data}: any) {
+export function MusicClient({data, start}: any) {
 
     return (
         <div className="p-10 overflow-auto" id="music-repositories">
@@ -26,9 +26,9 @@ export function MusicClient({data}: any) {
                                 <img className="max-h-32" src={score.thumbnail} alt={score.title}></img>
                             </a>
                         </div>
-                        <div id={"info-" + (index+1)}>
+                        <div id={"info-" + (index+start+1)}>
                             <a className="hyperlink text-xl w-fit" href={score.href} target="_blank" rel="noopener noreferrer">
-                                {score.title}
+                                {index+start+1 + ". " + score.title}
                             </a>
                             <p className="text-lg text-white" id="composer" key="description">{"Composer: "+ score.composer}</p>
                             <p className="text-lg text-white" id="date" key="date">{"Date of Creation: "+ unixToDateString(Number(score.date))}</p>

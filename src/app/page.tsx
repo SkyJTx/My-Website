@@ -13,6 +13,7 @@ export default function Home() {
         <a className="hyperlink" href="https://github.com/SkyJTx" target="_blank" rel="noopener noreferrer">
           SkyJT
         </a>
+        {' '} and Happy New Year 2024
       </h1>
       <Article title="Hello World!" date="2023/11/30 9:31 PM" modify={true}>
         <p>My name is Nattakarn Khumsupha. I'm a computer engineering student at KMUTNB (King Mongkut's University of Technology North Bangkok). I'm currently interested in Programming, Technology, Classical Music, History, and many more.</p>
