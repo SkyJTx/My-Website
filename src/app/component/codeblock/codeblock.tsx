@@ -7,7 +7,7 @@ import { ReactNode } from "react"
 
 export default function Codeblock({title, description, url, children}: {title: string, description: string, url: string, children?: ReactNode}) {
 
-    const [code, setChildren]: any = useState({})
+    const [res, setChildren]: any = useState({})
 
     useEffect(() => {
         async function fetchData() {
@@ -25,19 +25,19 @@ export default function Codeblock({title, description, url, children}: {title: s
             <p className="text-center text-white text-md m-5">
                 {description}
             </p>
-            <div className="m-5 p-5 bg-zinc-800 border-solid border-white border-4 rounded-md">
+            <div className="m-5 p-5 bg-zinc-800 border-solid border-white border-4 rounded-md h-128 overflow-auto ">
                 <pre>
                     <code>
                         {
-                            (code.code !== undefined) ? (
-                                <div className="overflow-auto" dangerouslySetInnerHTML={{__html: code.code}}/>
+                            (res.code !== undefined) ? (
+                                <div className="overflow-auto" dangerouslySetInnerHTML={{__html: res.code}}/>
                             ) : ("Loading...")
                         }
                     </code>
                 </pre>
             </div>
             {children}
-            <p className="text-right text-white font-bold text-sm">{`Language: ${code.lang !== undefined ? (code.lang) : ("Loading...")}`}</p>
+            <p className="text-right text-white font-bold text-sm">{`Language: ${res.lang !== undefined ? (res.lang) : ("Loading...")}`}</p>
         </div>
     )
 }

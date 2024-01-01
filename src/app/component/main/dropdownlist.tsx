@@ -7,14 +7,12 @@ export default function DropdownList({title, data, setData}: {title: string, dat
     function showOptions() {
         if (isActivated) {
             return (
-                <div>
-                    <ul>
-                        {data.map((item, index) => {
-                            return (
-                                <li key={index} onClick={() => {setData(item); setIsActivated(false); setSelected(item)}}>{item}</li>
-                            )
-                        })}
-                    </ul>
+                <div className="absolute border-solid border-white border-2 bg-slate-600 min-w-32 text-clip">
+                    {data.map((item, index) => {
+                        return (
+                            <button className="flex pl-2 hover:bg-slate-500 transition ease-in-out duration-200 min-w-32" title={item} type="button" key={index} onClick={() => {setData(item); setIsActivated(false); setSelected(item)}}>{item}</button>
+                        )
+                    })}
                 </div>
             ) 
         } return (
@@ -23,8 +21,8 @@ export default function DropdownList({title, data, setData}: {title: string, dat
     }
 
     return (
-        <div className="m-1 p-1 border-solid border-white border-5 rounded-md bg-slate-600">
-            <button title={title} type="button" onClick={() => {setIsActivated(!isActivated)}}>{selected}</button>
+        <div className="relative">
+            <button className="m-1 p-1 min-w-32 text-clip text-left border-solid border-white border-4 rounded-md bg-slate-600 max-w-32 hover:bg-slate-500 transition ease-in-out duration-200" title={title} type="button" onClick={() => {setIsActivated(!isActivated)}}>{selected}</button>
             {showOptions()}
         </div>
     )
