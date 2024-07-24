@@ -17,7 +17,7 @@ export default function ComponentTesting() {
                 <p>
                     Welcome to the testing corridor. This is where I test out new components and features for my website. This page is not meant to be seen by the public, but if you are here, then you are welcome to look around.
                 </p>
-                <DropdownList title="test" data={["test1", "test2"]} setData={() => console.log("TESTTEST")}/>
+                <DropdownList title="test" data={["test1", "test2"]} setData={(value: string) => console.log(value)}/>
                 <Loading/>
                 <p className="text-center text-white text-sm font-bold">
                     You choose page {page}.
